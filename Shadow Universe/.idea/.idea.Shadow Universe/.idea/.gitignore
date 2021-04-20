@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/projectSettingsUpdater.xml
+/modules.xml
+/.idea.Shadow Universe.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\flame\Documents\Shadow Universe\.idea\.idea.Shadow Universe\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

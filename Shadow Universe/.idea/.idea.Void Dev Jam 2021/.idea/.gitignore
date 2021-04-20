@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/.idea.Void Dev Jam 2021.iml
+/projectSettingsUpdater.xml
+/modules.xml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\flame\Documents\Void Dev Jam 2021\.idea\.idea.Void Dev Jam 2021\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
