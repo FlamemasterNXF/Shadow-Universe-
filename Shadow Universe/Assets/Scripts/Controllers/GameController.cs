@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    private const string fileName = "ShadowUniverseData";
-    private SaveData data = new SaveData();
+    public const string fileName = "ShadowUniverseData";
+    public SaveData data;
     void Start()
     {
         data = new SaveData();
