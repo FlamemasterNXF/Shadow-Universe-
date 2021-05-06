@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using File = UnityEngine.Windows.File;
  
 public class SaveSystem : MonoBehaviour
 {
@@ -10,7 +13,7 @@ public class SaveSystem : MonoBehaviour
     private static string BackUpSavePath => Application.persistentDataPath + "/BackUps/";
  
     private static int SaveCount;
- 
+    
     public static void SaveData<T>(T data, string fileName)
     {
         Directory.CreateDirectory(SavePath);
@@ -20,7 +23,7 @@ public class SaveSystem : MonoBehaviour
         Save(SavePath);
  
         SaveCount++;
- 
+        
         void Save(string path)
         {
             using (StreamWriter writer = new StreamWriter(path + fileName + FileType))
@@ -41,7 +44,7 @@ public class SaveSystem : MonoBehaviour
  
         bool backUpNeeded = false;
         T dataToReturn;
- 
+        
         Load(SavePath);
         if (backUpNeeded) Load(BackUpSavePath);
  
@@ -68,6 +71,4 @@ public class SaveSystem : MonoBehaviour
     public static bool SaveExists(string fileName) =>
         File.Exists(SavePath + fileName + FileType) 
         || File.Exists(BackUpSavePath + fileName + FileType);
- 
-// If File.Exists gives an error, try System.IO.File
 }
