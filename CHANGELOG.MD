@@ -10,9 +10,14 @@
 - Added the ability to Light Up the Universe...
 - Added Light Up cutscene and a temporary ending.
 
-#### v1.01
+#### v1.0.1
 
 - Bug fixes
+
+#### v1.0.3
+
+- Major Bug Fixes
+- Remove 'The Darkness is in Power' text
 
 ### v1.1: Dark Winter
 [COMING SOON]<br>
