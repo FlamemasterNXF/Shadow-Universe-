@@ -49,7 +49,7 @@ public class UpgradeController : MonoBehaviour
         }
 
         lightText.text = 
-            $"There is {Methods.NotationMethodBd(data.light)} <color=green>Light</color> and {Methods.NotationMethodBd(data.lightEnergy)} <color=yellow>Light Energy</color>\nThe <color=red>Darkness</color> is in power\nYou are creating {Methods.NotationMethodBd(data.lightEnergyPerSecond)} <color=yellow>Light Energy</color> Every Second\nThe conversion rate for <color=yellow>Light Energy</color> => <color=green>Light</color> is [{Methods.NotationMethodBd(data.lightConversion)} <color=green>Light</color> = {Methods.NotationMethodBd(data.lightEnergyConversion)} <color=yellow>Light Energy</color>]";
+            $"There is {Methods.NotationMethodBd(data.light)} <color=green>Light</color> and {Methods.NotationMethodBd(data.lightEnergy)} <color=yellow>Light Energy</color>\nYou are creating {Methods.NotationMethodBd(data.lightEnergyPerSecond)} <color=yellow>Light Energy</color> Every Second\nThe conversion rate for <color=yellow>Light Energy</color> => <color=green>Light</color> is [{Methods.NotationMethodBd(data.lightConversion)} <color=green>Light</color> = {Methods.NotationMethodBd(data.lightEnergyConversion)} <color=yellow>Light Energy</color>]";
         if (data.light >= 100)
         {
             if (!data.hasLitUp)
