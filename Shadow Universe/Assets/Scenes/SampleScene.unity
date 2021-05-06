@@ -2066,8 +2066,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18.036377, y: 445.37848}
-  m_SizeDelta: {x: 1277.544, y: 202.72925}
+  m_AnchoredPosition: {x: 18.036316, y: 445.37848}
+  m_SizeDelta: {x: 1652.9492, y: 202.7292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &724407730
 MonoBehaviour:
@@ -2648,15 +2648,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'There is 0 <color=green>Light</color> and 0 <color=yellow>Light Energy
 
-    </color>The
-    <color=red>Darkness</color> is in power
+    </color>You
+    are creating 1 <color=yellow>Light Energy</color> Every Second
 
-    You are creating 1 <color=yellow>Light
-    Energy</color> Every Second
-
-    The conversion rate for <color=yellow>Light
-    Energy</color> => <color=green>Light</color> is [0.01 <color=green>Light</color>
-    = 10 <color=yellow>Light Energy</color>]'
+    The conversion
+    rate for <color=yellow>Light Energy</color> => <color=green>Light</color> is
+    [0.01 <color=green>Light</color> = 10 <color=yellow>Light Energy</color>]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7137b0e3a699e8545af4aaa4ac92f4df, type: 2}
   m_sharedMaterial: {fileID: 3996738503794808601, guid: 7137b0e3a699e8545af4aaa4ac92f4df, type: 2}
@@ -2683,7 +2680,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35.6
+  m_fontSize: 47.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
