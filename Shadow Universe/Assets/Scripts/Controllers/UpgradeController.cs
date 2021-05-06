@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class UpgradeController : MonoBehaviour
 {
+    public SaveData data;
     public TMP_Text[] empowermentTexts = new TMP_Text[4];
     public TMP_Text lightText;
     public TMP_Text flipText;
@@ -18,9 +19,9 @@ public class UpgradeController : MonoBehaviour
     public GameObject everythingElse;
     public GameObject normalBG;
     public GameObject lightBG;
+
     private void Start()
     {
-        var data = GameController.Instance.data;
         UpdateTexts();
         lockedLightup.SetActive(true);
         everythingElse.SetActive(true);
@@ -40,7 +41,6 @@ public class UpgradeController : MonoBehaviour
 
     private void Update()
     {
-        var data = GameController.Instance.data;
         data.lightEnergy += data.lightEnergyPerSecond * Time.deltaTime;
         if (data.lightEnergy >= data.lightEnergyConversion)
         {
@@ -62,7 +62,6 @@ public class UpgradeController : MonoBehaviour
 
     public void BuyEmpowerment(int id)
     {
-        var data = GameController.Instance.data;
         switch (id)
         {
             case 1:
@@ -114,7 +113,6 @@ public class UpgradeController : MonoBehaviour
 
     public void BuyUpgrade(int id)
     {
-        var data = GameController.Instance.data;
         switch (id)
         {
             case 1:
@@ -155,7 +153,6 @@ public class UpgradeController : MonoBehaviour
 
     public void Flip()
     {
-        var data = GameController.Instance.data;
         if (data.light >= data.flipRequirement)
         {
             FlipReset();
@@ -166,7 +163,6 @@ public class UpgradeController : MonoBehaviour
 
     private void UpdateTexts()
     {
-        var data = GameController.Instance.data;
         empowermentTexts[0].text = $"Generate {Methods.NotationMethodBd(data.empowermentEffect[0])}x more <color=yellow>Light Energy</color>/s\n\nCost: {Methods.NotationMethodBd(data.empowermentCost[0])} <color=green>Light</color>";
         for (var i = 1; i < empowermentTexts.Length; i++)
         {
@@ -181,7 +177,6 @@ public class UpgradeController : MonoBehaviour
 
     private void FlipReset()
     {
-        var data = GameController.Instance.data;
         data.lightEnergy = 0;
         data.lightEnergyPerSecond = 1;
         data.light = 0;
@@ -205,7 +200,6 @@ public class UpgradeController : MonoBehaviour
 
     public void Return()
     {
-        var data = GameController.Instance.data;
         everythingElse.SetActive(true);
         lightupCutscene.SetActive(false);
         unlockedLightup.SetActive(false);

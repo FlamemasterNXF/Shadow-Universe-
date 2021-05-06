@@ -6,8 +6,6 @@ public class GameController : MonoBehaviour
 {
     public const string fileName = "ShadowUniverseData";
     public SaveData data;
-    public static GameController Instance;
-    private void Awake() => Instance = this;
     void Start()
     {
         data = new SaveData();
